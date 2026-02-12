@@ -1,4 +1,8 @@
-import { registerHandler, loginHandler, getUserProfile } from "../../src/controllers/user.controller.js";
+import {
+  registerHandler,
+  loginHandler,
+  getUserProfile,
+} from "../../src/controllers/user.controller.js";
 import { authUser } from "../../src/middlewares/authUser.middleware.js";
 import { connectDB } from "../../src/data/connectDb.js";
 
