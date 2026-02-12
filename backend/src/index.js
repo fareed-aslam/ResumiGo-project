@@ -10,15 +10,15 @@ dotenv.config({
 
 const PORT = process.env.PORT || 3000;
 
-await connectDB();
-// await connectDB()
-//   .then(() => {
-//     app.listen(PORT, () => {
-//       console.log(`Server is running at http://localhost:${PORT}`);
-//     });
-//   })
-//   .catch((error) => {
-//     console.log("Server connection failed....", error);
-//   });
 
-export default app;
+await connectDB()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server is running at http://localhost:${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.log("Server connection failed....", error);
+  });
+
+
