@@ -1,4 +1,4 @@
-export const BASE_URL = "https://resumi-go.vercel.app";
+export const BASE_URL = "https://resumigo-backend.onrender.com";
 
 export const API_PATHS = {
   AUTH: {
