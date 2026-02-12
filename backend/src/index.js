@@ -1,5 +1,5 @@
 import { app } from "./server.js";
-import { connectDb } from "./data/connectDb.js";
+import { connectDB } from "./data/connectDb.js";
 
 import dotenv from "dotenv";
 
@@ -10,8 +10,8 @@ dotenv.config({
 
 const PORT = process.env.PORT || 3000;
 
-await connectDb()
-// await connectDb()
+await connectDB()
+// await connectDB()
 //   .then(() => {
 //     app.listen(PORT, () => {
 //       console.log(`Server is running at http://localhost:${PORT}`);
